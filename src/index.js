@@ -1,1 +1,2 @@
-console.log("hello Excel")
+import './scss/index.scss'
+
