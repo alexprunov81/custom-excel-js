@@ -1,0 +1,27 @@
+{
+  "name": "custom-excel-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexprunov81/custom-excel-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexprunov81/custom-excel-js/issues"
+  },
+  "homepage": "https://github.com/alexprunov81/custom-excel-js#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
