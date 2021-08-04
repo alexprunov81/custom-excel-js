@@ -1,0 +1,1 @@
+{"version":3,"file":"main.bundle.css","mappings":"AAEA;EACE,sBAHK;EAIL,WAHM;AAER","sources":["webpack:///./scss/index.scss"],"sourcesContent":["$dark: #222;\r\n$white: #ff0;\r\nbody {\r\n  background-color: $dark;\r\n  color: $white;\r\n}"],"names":[],"sourceRoot":""}
