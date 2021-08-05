@@ -56,7 +56,7 @@ module.exports = (env, argv) => {
     },
     devServer: {
       port: '8080',
-      // open: true,
+      open: true,
       hot: true,
     },
     devtool: isDev ? 'source-map' : false,
