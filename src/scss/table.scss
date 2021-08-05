@@ -1,0 +1,81 @@
+@import "variables";
+@import "mixins";
+
+.excel__table {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header-height + $toolbar-height + $formula-height;
+  overflow-x: scroll;
+  padding-bottom: 2px;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    background-color: #f9f9fd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    background-color: #f8f9fa;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+    height: $row-height;
+  }
+
+  .row-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $info-cell-width;
+    height: 100%;
+    border: 1px solid $border-color;
+    background: #f8f9fa;
+    border-top: none;
+  }
+
+  .row-data {
+    display: flex;
+  }
+
+  .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    min-width: 40px;
+    width: $cell-width;
+    border: 1px solid $border-color;
+    border-top: 0;
+    border-left: 0;
+    height: 100%;
+  }
+
+  .cell {
+    min-width: 40px;
+    padding: 5px;
+    width: $cell-width;
+    height: 100%;
+    border: 1px solid #e2e3e3;
+    border-top: 0;
+    border-left: 0;
+    color: #111;
+    white-space: nowrap;
+    outline: none;
+
+    &.selected {
+      border: none;
+      outline: 2px solid #3c74ff;
+      z-index: 2;
+    }
+  }
+}
