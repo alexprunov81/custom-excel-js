@@ -16,7 +16,7 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
     background-color: #f8f9fa;
   }
 
@@ -33,6 +33,7 @@
   }
 
   .row-info {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +49,7 @@
   }
 
   .column {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,8 +76,34 @@
 
     &.selected {
       border: none;
-      outline: 2px solid #3c74ff;
+      outline: 2px solid $primary-color;
       z-index: 2;
     }
   }
+
+  .col-resize, .row-resize {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: $primary-color;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+  .col-resize {
+    top: 0;
+    width: 2px;
+    cursor: col-resize;
+  }
+
+  .row-resize {
+    left: 0;
+    height: 4px;
+    cursor: row-resize;
+  }
+
 }
